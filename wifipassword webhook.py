@@ -9,7 +9,7 @@ def get_wifi_passwords():
         passwords = []
         for profile in profiles:
             try:
-                result = subprocess.run(["netsh", "wlan", "show", "profile", profile, "key=clear"], capture_output=True, text=True, check=True)
+                result = subprocess.run(["netsh", "wlan", "show", "profile", profile, "key=cls"], capture_output=True, text=True, check=True)
                 password_lines = [line for line in result.stdout.splitlines() if "Key Content" in line]
                 
                 if password_lines:
