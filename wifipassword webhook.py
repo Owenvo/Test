@@ -35,7 +35,7 @@ embed = Embed(
     color=0xff0000  # You can set the color as needed
 )
 
-webhook_url = 'https://discord.com/api/webhooks/1206959428578967582/CO3XTmC3s-sBGqQkAU4pQuce-mSX1jIpJ7NxV1jUCV4B9swheeqyM1aISRp-gOApwWIq'
+webhook_url = '' #put here your webhook url
 
 hook = Webhook(webhook_url)
 hook.send(embed=embed)
